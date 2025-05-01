@@ -91,7 +91,7 @@ done
 
 ```Linha 21 a 24```- Enviamos uma notificação via ```webhook``` inicia com ```curl``` para fazer a requisição HTTP ```-H "Content-Type: application/json"\``` para que a requisição vá em formato ```JSON```. Agora o codigo ```-d "{\"content\": \"$MENSAGEM\"}" \``` envia uma mensagem em ```JSON``` para o destino ```$WEBHOOK``` declarado no inicio do código.
 
-```Linha 26 a 30```- No da requisição não retornar ```200``` entra no ```else``` informando a inatividade do serviço.
+```Linha 26 a 30```- No caso da requisição não retornar ```200``` entra no ```else``` informando a inatividade do serviço.
 
 ```Linha 32 a 36```- Começa com ```fi``` para finalizar a condicional, na linha abaixo ```echo``` que vai escrever a mensagem no arquivo ```.log```. ```sleep 60``` informa que o loop irá recomeçar a cada 60 segundos. Para finalizar o loop ```done```
 
