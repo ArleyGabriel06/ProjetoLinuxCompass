@@ -117,7 +117,7 @@ Após o seu arquivo ```shell``` terá que ter permissão de excução ```sudo ch
 
 ## Conclusão
 
-Ao seguir todos os passo iram chegar no resultado. Se a requisição retonar ```200``` irá gerar uma mensagem de serviço online ao mesmo tempo irá informar em uma arquivo ```.log``` o resultado desejado criando um historico de monitorização, caso o mesmo não retorne ```200``` envia uma nova mensagem informando a queda do serviço no arquivo ```.log``` e via ```webhook``` para o discord.
+Ao seguir todos os passos iram chegar no resultado. Se a requisição retonar ```200``` irá gerar uma mensagem de serviço online ao mesmo tempo irá informar em uma arquivo ```.log``` o resultado desejado criando um historico de monitorização, caso o mesmo não retorne ```200``` envia uma nova mensagem informando a queda do serviço no arquivo ```.log``` e via ```webhook``` para o discord.
 
 **Resultados: .log**
 ![log](img/log.png)
