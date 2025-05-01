@@ -87,7 +87,7 @@ done
 
 ```Linha 13 a 17```- Inicia com um loop infinito ```while :; do```. Após isso a variavel ```STATUS``` vai fazer uma requisição ao site e armazena o status HTTP. variavel ```DATE``` armazena data e hora local.
 
-```Linha 19 a 21```- A condifcional ```if``` verifica se a variavel ```$STATUS``` retorna ```200```. A variavel ```MENSAGEM``` define qual mensagem será enviada caso o retorno for ```200```.
+```Linha 19 a 21```- A condicional ```if``` verifica se a variavel ```$STATUS``` retorna ```200```. A variavel ```MENSAGEM``` define qual mensagem será enviada caso o retorno for ```200```.
 
 ```Linha 21 a 24```- Enviamnos uma notificação via ```webhook``` inicia com ```curl``` para fazer a requisição HTTP ```-H "Content-Type: application/json"\``` para que a requisição vá em formato ```JSON```. Agora o codigo ```-d "{\"content\": \"$MENSAGEM\"}" \``` envia uma mensagem em ```JSON``` para o destino ```$WEBHOOK``` declarado no inicio do código.
 
